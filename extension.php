@@ -43,11 +43,11 @@ class Extension extends BoltExtension
         $this->addJquery();
 
         // Add javascript file
-        $this->addJavascript("assets/codehighlight.js");
+        $this->addJavascript("assets/src/highlight.js");
 
         // Add CSS file
         $theme = $this->config['theme'];
-        $this->addCSS("assets/styles/" . $theme . ".css");
+        $this->addCSS("assets/src/styles/" . $theme . ".css");
 
         $snippet = "<script>
                         $(document).ready(function() {
