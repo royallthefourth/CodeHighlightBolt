@@ -37,24 +37,24 @@ class Extension extends BoltExtension
      * Initialize Code Highlight. Called during bootstrap phase.
      */
     function initialize()
-    {          
+    {
 
         // Make sure jQuery is included
         $this->addJquery();
 
         // Add javascript file
-        $this->addJavascript("assets/src/highlight.js");
+        $this->addJavascript("assets/highlight.js");
 
         // Add CSS file
         $theme = $this->config['theme'];
-        $this->addCSS("assets/src/styles/" . $theme . ".css");
+        $this->addCSS("assets/styles/" . $theme . ".css");
 
         $snippet = "<script>
                         $(document).ready(function() {
                             $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
                         });
                     </script>";
-        
+
         // Add string snippet to endofbody
         $this->insertSnippet('endofbody', $snippet);
 
@@ -68,7 +68,7 @@ class Extension extends BoltExtension
      */
     function twigHighlight($name="")
     {
-        
+
         $html = $name;
 
         return new \Twig_Markup($html, 'UTF-8');
