@@ -28,5 +28,8 @@
     "psr-4": {
       "Bolt\\Extension\\royallthefourth\\CodeHighlightBolt\\": ""
     }
+  },
+  "extra" : {
+    "bolt-icon": "icon-codehighlight.png"
   }
 }
