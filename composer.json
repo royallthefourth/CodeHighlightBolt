@@ -1,5 +1,5 @@
 {
-  "name": "royallthefourth/CodeHighlightBolt",
+  "name": "royallthefourth/codehighlightbolt",
   "description": "Automatic code highlighting for your Bolt site with highlight.js",
   "type": "bolt-extension",
   "keywords": [
