@@ -3,7 +3,9 @@
   "description": "Automatic code highlighting for your Bolt site with highlight.js",
   "type": "bolt-extension",
   "keywords": [
-    "code"
+    "code",
+    "highlighting",
+    "css"
   ],
   "require": {
     "bolt/bolt": ">=2.2,<3.0.0"
