@@ -1,0 +1,30 @@
+{
+  "name": "royallthefourth/CodeHighlightBolt",
+  "description": "Automatic code highlighting for your Bolt site with highlight.js",
+  "type": "bolt-extension",
+  "keywords": [
+    "code"
+  ],
+  "require": {
+    "bolt/bolt": ">=2.2,<3.0.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Royall Spence",
+      "email": "royall@royall.us",
+      "homepage": "http://royall.us"
+    },
+    {
+      "name": "Mespeche"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "init.php"
+    ],
+    "psr-4": {
+      "Bolt\\Extension\\royallthefourth\\CodeHighlightBolt\\": ""
+    }
+  }
+}
