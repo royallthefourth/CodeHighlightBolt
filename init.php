@@ -1,5 +1,5 @@
 <?php
 
-use Bolt\Extension\Bolt\Sitemap\Extension;
+use Bolt\Extension\royallthefourth\CodeHighlightBolt\Extension;
 
 $app['extensions']->register(new Extension($app));
