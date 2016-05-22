@@ -1,2 +1,6 @@
-.DS_Store
-.idea
+.DS_*
+config.yml
+composer.lock
+vendor/
+tests/tmp/
+

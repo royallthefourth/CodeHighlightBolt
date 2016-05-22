@@ -1,14 +1,12 @@
 Code Highlight
 =======================
 
-Code Highlight highlights syntax in code examples on blogs, forums and in fact on any web pages.
+Code Highlight highlights code syntax in any part of your Bolt site.
 
-This extension is an adaptation of [highlight.js](https://highlightjs.org/)
+This extension uses [highlight.js](https://highlightjs.org/)
 See the [documentation](https://highlightjs.org/usage/) for more details on usage or the [demo](https://highlightjs.org/static/demo/) for a list of supported languages.
 
-To use the extension, write your source format "formatted" code and wrap everything in a `<code>` via editing the source code. Then simply use the function __highlight()__ in your templates such as __{{ highlight(entry.body) }}__
-
-To use syntax highlighting within a post, just wrap the intended block like so:
+This extension adds CSS and JS to all of your pages to provide highlighting. You can use this anywhere by adding `<pre><code>` tags to a piece of content:
 ```html
 <pre>
     <code class="html">
@@ -16,3 +14,5 @@ To use syntax highlighting within a post, just wrap the intended block like so:
     </code>
 </pre>
 ```
+
+You can also include highlighting in any Twig template via the filter: `{{ entry.code|highlight('php') }}`
