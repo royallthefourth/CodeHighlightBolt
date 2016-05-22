@@ -1,6 +1,6 @@
 <?php
 
-namespace Bolt\Extension\YourName\ExtensionName\Tests;
+namespace Bolt\Extension\royallthefourth\CodeHighlightBolt\Tests;
 
 use Bolt\Extension\royallthefourth\CodeHighlightBolt\CodeHighlightBoltExtension;
 use Bolt\Tests\BoltUnitTest;
