@@ -3,7 +3,7 @@
 namespace Bolt\Extension\royallthefourth\CodeHighlightBolt;
 
 use Bolt\Asset\File\JavaScript;
-use Bolt\Asset\File\Snippet;
+use Bolt\Asset\Snippet\Snippet;
 use Bolt\Asset\File\Stylesheet;
 use Bolt\Asset\Target;
 use Bolt\Extension\SimpleExtension;
@@ -54,25 +54,5 @@ class CodeHighlightBoltExtension extends SimpleExtension
         return [
             'theme' => 'monokai'
         ];
-    }
-
-    protected function registerTwigFilters()
-    {
-        return [
-            'highlight' => [
-                'kangarooFilter',
-                [
-                    'is_safe' => 'html'
-                ]
-            ]
-        ];
-    }
-
-    protected function doHighlight($text, $format='html'){
-        return "<pre>
-                    <code class='{$format}'>
-                        {$text}
-                    </code>
-                </pre>";
     }
 }
