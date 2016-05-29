@@ -14,5 +14,3 @@ This extension adds CSS and JS to all of your pages to provide highlighting. You
     </code>
 </pre>
 ```
-
-You can also include highlighting in any Twig template via the filter: `{{ entry.code|highlight('php') }}`
