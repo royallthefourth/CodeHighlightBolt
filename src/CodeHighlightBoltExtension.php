@@ -15,11 +15,6 @@ use Bolt\Extension\SimpleExtension;
  */
 class CodeHighlightBoltExtension extends SimpleExtension
 {
-    public function getName()
-    {
-        return "Code Highlight";
-    }
-
     /**
      * {@inheritdoc}
      */
